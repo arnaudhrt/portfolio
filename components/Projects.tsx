@@ -1,5 +1,7 @@
 import React from "react";
 import { RiCarFill } from "react-icons/ri";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import ProjectDialog from "@/components/ProjectDialog";
 
 export default function Projects() {
   const projects = [
@@ -29,10 +31,17 @@ export default function Projects() {
       <h2 className="text-lg font-bold mb-3">Projects</h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <div key={index} className=" p-2 max-w-[300px] hover:-translate-y-3 transition-all cursor-pointer">
-            {project.icon}
-            <h3 className="text-base font-medium">{project.name}</h3>
-            <p className="text-sm text-muted-foreground">{project.description}</p>
+          <div key={index}>
+            <Dialog>
+              <DialogTrigger>
+                <div className="text-left p-2 max-w-[300px] hover:-translate-y-3 transition-all cursor-pointer">
+                  {project.icon}
+                  <h3 className="text-base font-medium">{project.name}</h3>
+                  <p className="text-sm text-muted-foreground">{project.description}</p>
+                </div>
+              </DialogTrigger>
+              <ProjectDialog />
+            </Dialog>
           </div>
         ))}
       </div>
