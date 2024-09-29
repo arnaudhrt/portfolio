@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa";
+import SectionTitle from "./global/SectionTitle";
 
 export default function Experience() {
   const experiences = [
@@ -24,7 +25,7 @@ export default function Experience() {
   ];
   return (
     <div>
-      <h2 className="text-lg font-bold mb-3">Experience</h2>
+      <SectionTitle>Experience</SectionTitle>
       <div className="flex">
         <div className="w-[2px] bg-slate-800 rounded-full"></div>
         <div className="space-y-6 relative left-[-7px]">

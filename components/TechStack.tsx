@@ -3,11 +3,12 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
+import SectionTitle from "./global/SectionTitle";
 
 export default function TechStack() {
   return (
     <div>
-      <h2 className="mb-3 font-lg font-bold">Tech Stack</h2>
+      <SectionTitle>Tech Stack</SectionTitle>
       <div className="flex gap-2 items-center">
         <button className="flex gap-2 items-center text-sm text-slate-500 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/40 transition py-2 px-4 rounded-md border border-slate-600 group">
           <FaReact className="size-6 text-slate-500 group-hover:text-blue-400 " />

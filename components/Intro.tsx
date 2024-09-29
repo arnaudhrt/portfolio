@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiMapPinLineLight } from "react-icons/pi";
 import Link from "next/link";
-import { ModeToggle } from "./ModeToggle";
+import { ModeToggle } from "./global/ModeToggle";
 import { Separator } from "./ui/separator";
 import { PiBriefcase } from "react-icons/pi";
 
