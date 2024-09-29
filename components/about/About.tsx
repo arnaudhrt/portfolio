@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="space-y-2" id="about">
+    <div className="space-y-3">
       <p>Hello, I am Arnaud,</p>
       <p>
         Developing skill through doing, guiltlessly exploring passion and interests, imbuing quality. Mindful that everything around me is someone’s

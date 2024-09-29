@@ -1,8 +1,8 @@
 import React from "react";
 import { RiCarFill } from "react-icons/ri";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
-import ProjectDialog from "@/components/ProjectDialog";
-import SectionTitle from "./global/SectionTitle";
+import ProjectDialog from "@/components/projects/ProjectDialog";
+import SectionTitle from "../global/SectionTitle";
 
 export default function Projects() {
   const projects = [
@@ -29,7 +29,7 @@ export default function Projects() {
   ];
   return (
     <div className="pb-9">
-      <SectionTitle id="projects">Projects</SectionTitle>
+      <SectionTitle>Projects</SectionTitle>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div key={index}>

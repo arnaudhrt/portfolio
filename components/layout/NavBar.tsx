@@ -1,5 +1,5 @@
 "use client";
-import { ModeToggle } from "./ModeToggle";
+import { ModeToggle } from "../global/ModeToggle";
 import { useState, useRef, useEffect } from "react";
 import { Dispatch, SetStateAction } from "react";
 
@@ -50,7 +50,7 @@ interface NavItemProps {
 function NavItem({ index, link, activeLink, setButtonClicked }: NavItemProps) {
   return (
     <button
-      className={`nav-button-${index} text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-sm transition-colors px-2 py-1 rounded-md relative`}
+      className={`nav-button-${index} text-muted-foreground hover:text-foreground text-sm transition-colors px-2 py-1 rounded-md relative`}
       onClick={() => setButtonClicked(index)}
       style={{ zIndex: 1 }}
     >

@@ -1,11 +1,11 @@
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import TechStack from "@/components/TechStack";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import LayerBlur from "@/components/global/LayerBlur";
+import Header from "@/components/layout/Header";
+import About from "@/components/about/About";
+import Experience from "@/components/about/Experience";
+import TechStack from "@/components/about/TechStack";
+import Projects from "@/components/projects/Projects";
+import Contact from "@/components/about/Contact";
+import Footer from "@/components/layout/Footer";
+import LayerBlur from "@/components/layout/LayerBlur";
 
 export default function Home() {
   return (

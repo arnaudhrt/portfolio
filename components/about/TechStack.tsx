@@ -3,7 +3,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
-import SectionTitle from "./global/SectionTitle";
+import SectionTitle from "../global/SectionTitle";
 
 export default function TechStack() {
   return (

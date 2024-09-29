@@ -5,6 +5,11 @@ import { useEffect, useState } from "react";
 export default function LayerBlur() {
   const { theme } = useTheme();
   const [isVisible, setIsVisible] = useState(false);
+  const [activeTheme, setActiveTheme] = useState<string | undefined | null>(null);
+
+  useEffect(() => {
+    setActiveTheme(theme);
+  }, [theme]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,7 +22,9 @@ export default function LayerBlur() {
 
   return (
     <div
-      className={`${theme === "light" ? "bg-blur-light" : "bg-blur-dark"} fixed top-0 left-0 w-full h-24 z-0 transition-opacity duration-300`}
+      className={`${activeTheme === "light" && "bg-blur-light"} ${
+        activeTheme === "dark" && "bg-blur-dark"
+      } fixed top-0 left-0 w-full h-24 z-0 transition-opacity duration-300`}
       style={{ display: isVisible ? "block" : "none" }}
     ></div>
   );

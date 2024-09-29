@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import profilePic from "../assets/images/profile-pic.jpeg";
+import profilePic from "../../assets/images/profile-pic.jpeg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiMapPinLineLight } from "react-icons/pi";
 import Link from "next/link";
-import { Separator } from "./ui/separator";
+import { Separator } from "../ui/separator";
 import { PiBriefcase } from "react-icons/pi";
-import NavBar from "./global/NavBar";
+import NavBar from "../layout/NavBar";
 
 export default function Header() {
   return (
