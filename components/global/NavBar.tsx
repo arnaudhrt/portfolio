@@ -23,7 +23,7 @@ export default function NavBar() {
   }, [buttonClicked]);
 
   return (
-    <div className="flex justify-between items-center relative">
+    <div className="flex justify-between items-center relative mt-5 z-50">
       <div className="flex gap-2 items-center relative">
         <div ref={backgroundRef} className="absolute inset-y-0 bg-accent rounded-md transition-all duration-300" style={{ zIndex: 0 }}></div>
         {navLinks.map((link, index) => {
