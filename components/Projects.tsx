@@ -29,7 +29,7 @@ export default function Projects() {
   ];
   return (
     <div className="pb-9">
-      <SectionTitle>Projects</SectionTitle>
+      <SectionTitle id="projects">Projects</SectionTitle>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div key={index}>

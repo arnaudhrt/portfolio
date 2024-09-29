@@ -1,4 +1,4 @@
-import Intro from "@/components/Intro";
+import Header from "@/components/Header";
 import About from "@/components/About";
 import NavBar from "@/components/global/NavBar";
 import Experience from "@/components/Experience";
@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="width-[90%] max-w-screen-md mx-auto">
-      <Intro />
+      <Header />
       <div className="space-y-12">
         <NavBar />
         <About />

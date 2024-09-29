@@ -25,7 +25,7 @@ export default function Experience() {
   ];
   return (
     <div>
-      <SectionTitle>Experience</SectionTitle>
+      <SectionTitle id="experience">Experience</SectionTitle>
       <div className="flex">
         <div className="w-[2px] bg-slate-800 rounded-full"></div>
         <div className="space-y-6 relative left-[-7px]">
