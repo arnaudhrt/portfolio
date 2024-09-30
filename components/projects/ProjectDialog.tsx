@@ -21,15 +21,14 @@ export default function ProjectDialog({ name }: { name: string }) {
             </div>
           </div>
           <div className="space-y-5">
-            <div>
-              <p className="text-sm text-muted-foreground mb-2">{project.description}</p>
-              <p className="text-sm text-muted-foreground">
-                This project has been developped in colaboration with{" "}
-                <a href="https://www.pierrehrt.com" className="text-foreground underline">
-                  @pierrehrt
-                </a>
-                .
-              </p>
+            <div className="space-y-2">
+              {project.description.map((description, index) => {
+                return (
+                  <p key={index} className="text-sm text-muted-foreground">
+                    {description}
+                  </p>
+                );
+              })}
             </div>
             <div className="flex gap-2 items-center">
               {project.techStack.map((tech, index) => {
