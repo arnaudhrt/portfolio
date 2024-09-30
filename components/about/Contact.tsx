@@ -1,5 +1,6 @@
 import React from "react";
 import SectionTitle from "../global/SectionTitle";
+import { infos } from "@/lib/constants/infos";
 
 export default function Contact() {
   return (
@@ -7,12 +8,12 @@ export default function Contact() {
       <SectionTitle>Contact</SectionTitle>
       <p className="text-sm">
         Let&#39;s work on something together, you can reach me at{" "}
-        <a href="https://twitter.com/ahurert" target="_blank" className="underline">
+        <a href={infos.linkedin} target="_blank" className="underline">
           @arnaudhrt
         </a>{" "}
         or{" "}
-        <a href="mailto:hi@arnaudhrt.com" className="underline">
-          hi@arnaudhrt.com
+        <a href={`mailto:${infos.email}`} className="underline">
+          {infos.email}
         </a>
       </p>
     </div>

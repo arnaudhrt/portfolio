@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Separator } from "../ui/separator";
 import { PiBriefcase } from "react-icons/pi";
 import NavBar from "../layout/NavBar";
+import { infos } from "@/lib/constants/infos";
 
 export default function Header() {
   return (
@@ -18,11 +19,11 @@ export default function Header() {
           <h2 className="mb-1 text-base">Frontend Developer</h2>
           <p className="mb-1 flex gap-2 items-center text-sm text-muted-foreground">
             <PiMapPinLineLight className="size-5" />
-            Phuket, Thailand
+            {infos.location}
           </p>
           <p className="flex gap-2 items-center text-sm text-muted-foreground">
             <PiBriefcase className="size-5" />
-            Crazy Web Studio Co. Ltd.
+            {infos.company}
           </p>
         </div>
         <Image
@@ -35,13 +36,13 @@ export default function Header() {
         />
       </div>
       <div className="flex gap-3 items-center mb-5">
-        <Link href="https://github.com/ahurert" target="_blank" rel="noopener noreferrer">
+        <Link href={infos.github} target="_blank" rel="noopener noreferrer">
           <FaGithub className="size-5 hover:scale-110 transition" />
         </Link>
-        <Link href="https://www.linkedin.com/in/ahurert/" target="_blank" rel="noopener noreferrer">
+        <Link href={infos.linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="size-5 hover:scale-110 transition" />
         </Link>
-        <Link href="https://twitter.com/ahurert" target="_blank" rel="noopener noreferrer">
+        <Link href={infos.twitter} target="_blank" rel="noopener noreferrer">
           <FaXTwitter className="size-5 hover:scale-110 transition" />
         </Link>
       </div>

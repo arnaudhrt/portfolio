@@ -10,4 +10,6 @@ interface UseStore {
 export const useUseStore = create<UseStore>((set) => ({
   activeTab: "About",
   setActiveTab: (value: string) => set({ activeTab: value }),
+
+  
 }));
