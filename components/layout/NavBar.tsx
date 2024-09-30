@@ -2,10 +2,12 @@
 import { ModeToggle } from "../global/ModeToggle";
 import { useState, useRef, useEffect } from "react";
 import { Dispatch, SetStateAction } from "react";
+import { useUseStore } from "@/lib/stores/useStore";
 
 export default function NavBar() {
+  const { setActiveTab } = useUseStore();
   const [buttonClicked, setButtonClicked] = useState(0);
-  const navLinks = ["About", "Blog", "Projects", "Contact"];
+  const navLinks = ["About", "Projects", "Contact"];
   const backgroundRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,6 +24,11 @@ export default function NavBar() {
     return () => window.removeEventListener("resize", updateBackgroundPosition);
   }, [buttonClicked]);
 
+  const handleClick = (index: number, link: string) => {
+    setButtonClicked(index);
+    setActiveTab(link);
+  };
+
   return (
     <div className="flex justify-between items-center relative mt-5 z-50">
       <div className="flex gap-2 items-center relative">
@@ -30,7 +37,7 @@ export default function NavBar() {
           const activeLink = buttonClicked === index ? true : false;
           return (
             <a key={index} href={`#${link}`}>
-              <NavItem key={index} index={index} link={link} activeLink={activeLink} setButtonClicked={setButtonClicked} />
+              <NavItem key={index} index={index} link={link} activeLink={activeLink} setButtonClicked={() => handleClick(index, link)} />
             </a>
           );
         })}

@@ -4,7 +4,7 @@ import { LiaHandPeace } from "react-icons/lia";
 
 export default function Footer() {
   return (
-    <div className="mt-20 group pb-3">
+    <div className="mt-20 group pb-3 fixed bottom-0 w-full max-w-screen-md">
       <Separator className="mb-3" />
       <div className="flex justify-between items-center text-xs text-muted-foreground">
         <LiaHandPeace className="size-5 text-slate-500 group-hover:text-yellow-400 transition" />

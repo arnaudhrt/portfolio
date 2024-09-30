@@ -28,7 +28,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="pb-9">
+    <div className="pb-28">
       <SectionTitle>Projects</SectionTitle>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (

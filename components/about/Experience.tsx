@@ -27,12 +27,12 @@ export default function Experience() {
     <div>
       <SectionTitle>Experience</SectionTitle>
       <div className="flex">
-        <div className="w-[2px] bg-slate-800 rounded-full ml-2"></div>
+        <div className="w-[2px] bg-border rounded-full ml-2"></div>
         <div className="space-y-6 ml-[-7px]">
           {experiences.map((experience, index) => (
             <div key={index} className="flex gap-4">
               <div className="flex-shrink-0 mt-2">
-                <FaCircle className={`${index == 0 ? "text-slate-400" : "text-slate-800"} size-3`} />
+                <FaCircle className={`${index == 0 ? "text-slate-400" : "text-border"} size-3`} />
               </div>
               <div>
                 <h3 className="text-lg font-medium">{experience.position}</h3>
