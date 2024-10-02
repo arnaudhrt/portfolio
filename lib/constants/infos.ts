@@ -5,6 +5,6 @@ export const infos = {
   company: "Crazy Web Studio Co. Ltd",
   companyLink: "https://www.crazywebstudio.com/",
   linkedin: "https://www.linkedin.com/in/ahurert/",
-  github: "https://github.com/ahurert",
+  github: "https://github.com/arnaudhrt",
   twitter: "https://twitter.com/ahurert",
 };

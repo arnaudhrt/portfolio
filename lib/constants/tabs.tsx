@@ -1,4 +1,5 @@
 import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
 import Projects from "@/components/projects/Projects";
 
 export const tabs = [
@@ -9,5 +10,9 @@ export const tabs = [
   {
     name: "Projects",
     component: <Projects />,
+  },
+  {
+    name: "Contact",
+    component: <Contact />,
   },
 ];

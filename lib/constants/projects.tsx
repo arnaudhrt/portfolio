@@ -7,21 +7,6 @@ export const projectCards = [
     name: "GoYaly Co. Ltd",
     description: "Booking system for car rental in Seattle.",
   },
-  {
-    icon: <RiCarFill className="text-slate-500 mb-2 size-8 p-2 border border-slate-500/40 rounded-md" />,
-    name: "GoYaly Co. Ltd",
-    description: "Booking system for car rental in Seattle.",
-  },
-  {
-    icon: <RiCarFill className="text-slate-500 mb-2 size-8 p-2 border border-slate-500/40 rounded-md" />,
-    name: "GoYaly Co. Ltd",
-    description: "Booking system for car rental in Seattle.",
-  },
-  {
-    icon: <RiCarFill className="text-slate-500 mb-2 size-8 p-2 border border-slate-500/40 rounded-md" />,
-    name: "GoYaly Co. Ltd",
-    description: "Booking system for car rental in Seattle.",
-  },
 ];
 
 export const projectContent = [
@@ -45,7 +30,7 @@ export const projectContent = [
       <TypescriptButton key="typescript" className="w-full" size="small" />,
       <TailwindButton key="tailwind" className="w-full" size="small" />,
     ],
-    linkRepo: "Private",
+    linkRepo: "private",
     LinkApp: "https://www.goyaly.com/",
   },
 ];

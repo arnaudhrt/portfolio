@@ -60,6 +60,9 @@ const config: Config = {
       transitionTimingFunction: {
         bounce: "cubic-bezier(.69,2.03,.53,.62)",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

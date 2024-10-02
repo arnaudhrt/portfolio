@@ -7,7 +7,7 @@ export default function TechStack() {
     <div>
       <SectionTitle>Tech Stack</SectionTitle>
       <div className="flex gap-2 items-center">
-        <ReactButton size="small" />
+        <ReactButton />
         <NextButton />
         <TypescriptButton />
         <TailwindButton />

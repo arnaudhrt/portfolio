@@ -1,12 +1,25 @@
-import React from "react";
+"use client";
 import { DialogContent, DialogHeader } from "@/components/ui/dialog";
 import Image from "next/image";
 import { IoLink } from "react-icons/io5";
 import { projectContent } from "@/lib/constants/projects";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function ProjectDialog({ name }: { name: string }) {
+  const router = useRouter();
   const project = projectContent.find((project) => project.name === name);
+  const [isPrivate, setIsPrivate] = useState(false);
   if (!project) return null;
+
+  const handleCick = () => {
+    if (project.linkRepo === "private") {
+      setIsPrivate(true);
+    } else {
+      router.push(project.LinkApp);
+    }
+  };
   return (
     <div>
       <DialogContent>
@@ -38,15 +51,20 @@ export default function ProjectDialog({ name }: { name: string }) {
             <div className="flex gap-6 items-center">
               <div className="flex gap-1 items-center hover:underline">
                 <IoLink className="size-5 text-foreground" />
-                <a href={project.linkRepo} className="text-sm text-foreground">
-                  GitHub Repo
-                </a>
+                <div className="text-sm text-foreground overflow-hidden  relative w-24 p-3 cursor-pointer" onClick={handleCick}>
+                  <span className={`text-red-500 absolute left-1 transition-all duration-300 ${isPrivate ? "top-[1px]" : "top-10"}`}>
+                    Private Repo
+                  </span>
+                  <span className={`absolute left-1 transition-all duration-300 ${isPrivate ? "-top-10" : "top-[1px]"} whitespace-nowrap`}>
+                    Github Repo
+                  </span>
+                </div>
               </div>
               <div className="flex gap-1 items-center hover:underline">
                 <IoLink className="size-5 text-foreground" />
-                <a href={project.LinkApp} className="text-sm text-foreground">
+                <Link href={project.LinkApp} className="text-sm text-foreground">
                   Live App
-                </a>
+                </Link>
               </div>
             </div>
           </div>
