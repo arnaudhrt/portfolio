@@ -6,7 +6,7 @@ export default function TechStack() {
   return (
     <div>
       <SectionTitle>Tech Stack</SectionTitle>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center flex-wrap">
         <ReactButton />
         <NextButton />
         <TypescriptButton />

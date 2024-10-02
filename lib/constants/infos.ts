@@ -1,10 +1,10 @@
 export const infos = {
-  email: "hi@arnaudhrt.com",
-  phone: "+852 8888 8888",
+  email: "arnaud3488@gmail.com",
+  phone: "+41 77 221 96 31",
   location: "Phuket, Thailand",
   company: "Crazy Web Studio Co. Ltd",
   companyLink: "https://www.crazywebstudio.com/",
-  linkedin: "https://www.linkedin.com/in/ahurert/",
+  linkedin: "www.linkedin.com/in/arnaudhrt",
   github: "https://github.com/arnaudhrt",
-  twitter: "https://twitter.com/ahurert",
+  twitter: "https://x.com/arnaud_hrt",
 };

@@ -34,7 +34,7 @@ export default function ProjectDialog({ name }: { name: string }) {
             </div>
           </div>
           <div className="space-y-5">
-            <div className="space-y-2">
+            <div className="space-y-2 text-left">
               {project.description.map((description, index) => {
                 return (
                   <p key={index} className="text-sm text-muted-foreground">
@@ -43,7 +43,7 @@ export default function ProjectDialog({ name }: { name: string }) {
                 );
               })}
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-2 items-center flex-wrap">
               {project.techStack.map((tech, index) => {
                 return <div key={index}>{tech}</div>;
               })}
