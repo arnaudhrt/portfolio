@@ -12,7 +12,7 @@ import { infos } from "@/lib/constants/infos";
 
 export default function Header() {
   return (
-    <div className="pt-12 pb-5 bg-background">
+    <div className="pt-12 pb-5">
       <div className="flex gap-4 justify-between items-center mb-5">
         <div>
           <h1 className="text-2xl font-bold ">Arnaud Huret</h1>
@@ -27,12 +27,11 @@ export default function Header() {
           </p>
         </div>
         <Image
-          className="rounded-full size-24 grayscale mb-2"
+          className="rounded-full size-28 grayscale border-2 border-muted-foreground z-[-1]"
           src={profilePic}
           alt="Arnaud Huret React developer profile picture"
-          width={100}
-          height={100}
-          priority
+          width={180}
+          height={190}
         />
       </div>
       <div className="flex gap-3 items-center mb-5">
