@@ -33,36 +33,48 @@ export default function ProjectDialog({ name }: { name: string }) {
               <p className="text-sm text-muted-foreground">{project.location}</p>
             </div>
           </div>
-          <div className="space-y-5">
-            <div className="space-y-2 text-left">
-              {project.description.map((description, index) => {
-                return (
-                  <p key={index} className="text-sm text-muted-foreground">
-                    {description}
-                  </p>
-                );
-              })}
+          <div className="space-y-4">
+            <p className="text-sm text-muted-foreground mb-2">{project.description}</p>
+            <div>
+              <p className="text-sm text-muted-foreground text-left">Team :</p>
+              <div className="flex gap-5 items-center ">
+                {project.team &&
+                  project.team.map((el, index) => (
+                    <div key={index} className="flex gap-1 items-center group">
+                      <IoLink className="size-5 text-muted-foreground group-hover:text-foreground" />
+                      <a href={el.link} className="text-sm text-muted-foreground group-hover:text-foreground">
+                        {el.name}
+                      </a>
+                    </div>
+                  ))}
+              </div>
             </div>
+
             <div className="flex gap-2 items-center flex-wrap">
               {project.techStack.map((tech, index) => {
                 return <div key={index}>{tech}</div>;
               })}
             </div>
+
             <div className="flex gap-6 items-center">
-              <div className="flex gap-1 items-center hover:underline">
-                <IoLink className="size-5 text-foreground" />
-                <div className="text-sm text-foreground overflow-hidden  relative w-24 p-3 cursor-pointer" onClick={handleCick}>
+              <div className="flex gap-1 items-center hover:underline group transition-all duration-300">
+                <IoLink className="size-5 text-muted-foreground group-hover:text-foreground" />
+                <div className="text-sm overflow-hidden relative w-24 p-3 cursor-pointer" onClick={handleCick}>
                   <span className={`text-red-500 absolute left-1 transition-all duration-300 ${isPrivate ? "top-[1px]" : "top-10"}`}>
                     Private Repo
                   </span>
-                  <span className={`absolute left-1 transition-all duration-300 ${isPrivate ? "-top-10" : "top-[1px]"} whitespace-nowrap`}>
+                  <span
+                    className={`absolute left-1 transition-all duration-300 ${
+                      isPrivate ? "-top-10" : "top-[1px]"
+                    } whitespace-nowrap text-muted-foreground group-hover:text-foreground`}
+                  >
                     Github Repo
                   </span>
                 </div>
               </div>
-              <div className="flex gap-1 items-center hover:underline">
-                <IoLink className="size-5 text-foreground" />
-                <Link href={project.LinkApp} className="text-sm text-foreground">
+              <div className="flex gap-1 items-center group">
+                <IoLink className="size-5 text-muted-foreground group-hover:text-foreground" />
+                <Link href={project.LinkApp} className="text-sm text-muted-foreground group-hover:text-foreground">
                   Live App
                 </Link>
               </div>
