@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    position: "Fullstack Developer React & Typescript",
+    position: "Fullstack Developer React & Nodejs",
     company: "Crazy Web Studio Co., Ltd",
     location: "Phuket, Thailand",
     dateRange: "2024 - Present",
