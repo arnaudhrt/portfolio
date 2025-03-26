@@ -2,6 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
+import { FaNodeJs } from "react-icons/fa";
 import Link from "next/link";
 
 interface ButtonProps {
@@ -69,4 +70,17 @@ function TailwindButton({ className, size = "medium" }: ButtonProps) {
   );
 }
 
-export { ReactButton, NextButton, TypescriptButton, TailwindButton };
+function NodejsButton({ className, size = "medium" }: ButtonProps) {
+  return (
+    <Link href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">
+      <button
+        className={`flex gap-2 items-center text-slate-500 hover:text-lime-400 hover:bg-sky-400/10 hover:border-lime-400/40 transition rounded-md border border-slate-600 group hover:scale-105 ${style[size].containerStyle} ${className}`}
+      >
+        <FaNodeJs className={`${style[size].iconStyle} text-slate-500 group-hover:text-lime-400 `} />
+        <span>Nodejs</span>
+      </button>
+    </Link>
+  );
+}
+
+export { ReactButton, NextButton, TypescriptButton, TailwindButton, NodejsButton };

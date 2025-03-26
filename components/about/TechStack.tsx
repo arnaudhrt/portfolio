@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactButton, NextButton, TypescriptButton, TailwindButton } from "@/lib/constants/techButtons";
+import { ReactButton, NextButton, TypescriptButton, TailwindButton, NodejsButton } from "@/lib/constants/techButtons";
 import SectionTitle from "../global/SectionTitle";
 
 export default function TechStack() {
@@ -11,6 +11,7 @@ export default function TechStack() {
         <NextButton />
         <TypescriptButton />
         <TailwindButton />
+        <NodejsButton />
       </div>
     </div>
   );

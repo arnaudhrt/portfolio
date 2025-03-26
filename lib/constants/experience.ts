@@ -1,20 +1,26 @@
 export const experiences = [
   {
-    position: "Frontend Developer",
+    position: "Fullstack Developer React & Typescript",
     company: "Crazy Web Studio Co., Ltd",
     location: "Phuket, Thailand",
     dateRange: "2024 - Present",
   },
   {
-    position: "Freelance Frontend Developer",
-    company: "Myself",
-    location: "Lausanne, Switzerland",
+    position: "Frontend Developer React",
+    company: "SAFTI",
+    location: "Toulouse, France",
     dateRange: "2023 - 2024",
   },
   {
-    position: "Frontend Developer",
+    position: "IT System Administrator",
+    company: "French Army",
+    location: "Toulouse, France",
+    dateRange: "2016 - 2022",
+  },
+  {
+    position: "Intern Frontend Developer",
     company: "Horizon Studio",
     location: "Toulouse, France",
-    dateRange: "2023 - 2023",
+    dateRange: "2016",
   },
 ];

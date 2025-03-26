@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profilePic from "../../assets/images/profile-pic.jpeg";
+import profilePic from "../../assets/images/photo-profile.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiMapPinLineLight } from "react-icons/pi";
@@ -16,7 +16,7 @@ export default function Header() {
       <div className="flex gap-4 justify-between items-center mb-5">
         <div>
           <h1 className="text-2xl font-bold ">Arnaud Huret</h1>
-          <h2 className="mb-1 text-base">Frontend Developer</h2>
+          <h2 className="mb-1 text-base">Fullstack Developer</h2>
           <p className="mb-1 flex gap-2 items-center text-sm text-muted-foreground">
             <PiMapPinLineLight className="size-5" />
             {infos.location}
@@ -27,11 +27,11 @@ export default function Header() {
           </p>
         </div>
         <Image
-          className="rounded-full size-28 grayscale border-2 border-muted-foreground z-[-1]"
+          className="rounded-full max-w-28 aspect-square object-cover grayscale border-2 border-muted-foreground z-[-1]"
           src={profilePic}
           alt="Arnaud Huret React developer profile picture"
           width={180}
-          height={190}
+          height={180}
         />
       </div>
       <div className="flex gap-3 items-center mb-5">
