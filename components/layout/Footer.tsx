@@ -8,7 +8,7 @@ export default function Footer() {
       <Separator className="mb-3" />
       <div className="flex justify-between items-center text-xs text-muted-foreground">
         <LiaHandPeace className="size-5 text-slate-500 group-hover:text-yellow-400 transition" />
-        <p>© 2024 Arnaud Huret</p>
+        <p>© 2022 Arnaud Huret</p>
         <LiaHandPeace className="size-5 text-slate-500 group-hover:text-yellow-400 transition" />
       </div>
     </div>
