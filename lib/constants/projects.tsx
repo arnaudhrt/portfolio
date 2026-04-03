@@ -1,5 +1,5 @@
 import { RiCarFill } from "react-icons/ri";
-import { ReactButton, NextButton, TypescriptButton, TailwindButton } from "@/lib/constants/techButtons";
+import { ReactButton, NextButton, TypescriptButton, TailwindButton } from "@/components/about/TechButtons";
 
 export const projectCards = [
   {

@@ -3,6 +3,9 @@ import { ModeToggle } from "../global/ModeToggle";
 import { useState, useRef, useEffect } from "react";
 import { Dispatch, SetStateAction } from "react";
 import { useUseStore } from "@/lib/stores/useStore";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { infos } from "@/lib/constants/infos";
 
 export default function NavBar() {
   const { setActiveTab } = useUseStore();
@@ -30,7 +33,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="flex justify-between items-center relative mt-5 z-50">
+    <div className="flex justify-between items-center relative mb-2 z-50">
       <div className="flex gap-2 items-center relative">
         <div ref={backgroundRef} className="absolute inset-y-0 bg-accent rounded-md transition-all duration-300" style={{ zIndex: 0 }}></div>
         {navLinks.map((link, index) => {
@@ -42,7 +45,9 @@ export default function NavBar() {
           );
         })}
       </div>
-      <ModeToggle />
+      <Link href={infos.github} target="_blank" rel="noopener noreferrer">
+        <FaGithub className="size-5 hover:scale-110 transition text-muted-foreground hover:text-foreground" />
+      </Link>
     </div>
   );
 }
