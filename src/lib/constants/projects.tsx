@@ -1,0 +1,37 @@
+import { RiCarFill } from "react-icons/ri";
+import { ReactButton, TypescriptButton, TailwindButton } from "@/components/TechButtons";
+
+export const projectCards = [
+  {
+    icon: <RiCarFill className="text-slate-500 mb-2 size-8 p-2 border border-slate-500/40 rounded-md" />,
+    name: "GoYaly Co. Ltd",
+    description: "Booking system for car rental in Seattle.",
+  },
+];
+
+export const projectContent = [
+  {
+    name: "GoYaly Co. Ltd",
+    logo: "https://www.goyaly.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.ea6ecd27.png&w=96&q=75",
+    location: "Seattle, United States",
+    description:
+      "Developed a car rental platform for GoYaly, a Seattle-based company. The application allows users to browse available cars, make bookings, and process payments securely via Stripe. It also includes an admin dashboard for managing rentals, tracking orders, and updating inventory.",
+    team: [
+      {
+        name: "Pierre Huret",
+        link: "https://www.pierrehrt.com",
+      },
+      {
+        name: "Tiago Valle",
+        link: "https://github.com/Songovan",
+      },
+    ],
+    techStack: [
+      <ReactButton key="react" className="w-full" />,
+      <TypescriptButton key="typescript" className="w-full" />,
+      <TailwindButton key="tailwind" className="w-full" />,
+    ],
+    linkRepo: "private",
+    LinkApp: "https://www.goyaly.com/",
+  },
+];
