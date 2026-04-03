@@ -22,7 +22,7 @@ export default function Footer() {
   const verb = useRandomVerb();
 
   return (
-    <div className="group pb-3 w-full max-w-screen-md">
+    <div className="group pb-3 w-full max-w-3xl">
       <Separator className="mb-3" />
       <div className="flex justify-between items-center text-xs text-muted-foreground">
         <LiaHandPeace className="size-5 text-slate-500 group-hover:text-yellow-400 transition" />

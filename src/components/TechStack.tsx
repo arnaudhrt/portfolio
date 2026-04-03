@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactButton, TypescriptButton, NodeJsButton, FlutterButton, DartButton, TailwindButton, ExpressButton, SqlButton } from "./TechButtons";
 
 export default function TechStack() {

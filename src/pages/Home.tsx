@@ -28,7 +28,7 @@ export default function Home() {
   const activeTabComponent = tabs.find((tab) => tab.name === activeTab)?.component;
 
   return (
-    <div className="w-[90%] max-w-screen-md mx-auto ">
+    <div className="w-[90%] max-w-3xl mx-auto ">
       <div className="min-h-[calc(100vh-45px)]">
         <LayerBlur />
         <div className="pt-12 pb-5">

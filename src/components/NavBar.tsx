@@ -56,7 +56,7 @@ interface NavItemProps {
 function NavItem({ index, link, activeLink, setButtonClicked }: NavItemProps) {
   return (
     <button
-      className={`nav-button-${index} text-muted-foreground hover:text-foreground text-sm transition-colors px-2 py-1 rounded-md relative`}
+      className={`nav-button-${index} text-muted-foreground hover:text-foreground text-sm transition-colors px-2 py-1 rounded-md relative cursor-pointer`}
       onClick={() => setButtonClicked(index)}
       style={{ zIndex: 1 }}
     >
