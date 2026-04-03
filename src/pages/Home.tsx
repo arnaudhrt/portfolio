@@ -34,7 +34,7 @@ export default function Home() {
         <div className="pt-12 pb-5">
           <div className="flex gap-4 justify-between items-center mb-10">
             <div>
-              <div className="relative">
+              <div className="relative hidden sm:block">
                 <pre className="font-mono text-xs leading-none">
                   {`/**
  *     █████╗ ██████╗ ███╗   ██╗ █████╗ ██╗   ██╗██████╗
@@ -48,9 +48,13 @@ export default function Home() {
                 </pre>
                 <span className="absolute bottom-0 left-12 text-base text-muted-foreground">Software Developer</span>
               </div>
+              <div className="sm:hidden">
+                <h1 className="text-2xl font-bold tracking-tight">ARNAUD</h1>
+                <span className="text-sm text-muted-foreground">Software Developer</span>
+              </div>
             </div>
             <img
-              className="rounded-full size-28 grayscale border-2 border-muted-foreground z-[-1]"
+              className="rounded-full size-20 sm:size-28 grayscale border-2 border-muted-foreground z-[-1]"
               src={profilePic}
               alt="arnaudhrt software developer"
               width={180}
